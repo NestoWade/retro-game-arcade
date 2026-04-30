@@ -227,12 +227,12 @@ background-color:rgba(0,0,0,0.75);
 font-size:12px;
 }
 
-/* Win animation used when the player wins a round or game */
+
 .win-glow{
 animation:winGlow 0.6s ease-in-out 3 alternate;
 }
 
-/* Green glowing animation effect */
+
 @keyframes winGlow{
 from{
 color:#ffffff;
