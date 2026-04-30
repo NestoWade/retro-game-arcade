@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact - Retro Game Arcade</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<h1 class="arcade-title">Retro Game Arcade</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="credits.html">Credits</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<main>
+
+<section class="intro contact-box">
+
+<h2>Contact The Arcade</h2>
+
+<p>
+Use this form to send feedback, report a bug, or vote for a new game to be added to the arcade.
+</p>
+
+<form id="contactForm" class="contact-form">
+
+<label for="nameInput">Your Name:</label>
+<input type="text" id="nameInput" placeholder="Enter your name" required>
+
+<label for="emailInput">Your Email:</label>
+<input type="email" id="emailInput" placeholder="Enter your email" required>
+
+<label for="messageType">Message Type:</label>
+<select id="messageType" required>
+<option value="">Choose one</option>
+<option value="Game Feedback">Game Feedback</option>
+<option value="Bug Report">Bug Report</option>
+<option value="New Game Vote">New Game Vote</option>
+<option value="General Question">General Question</option>
+</select>
+
+<label for="gameChoice">Related Game:</label>
+<select id="gameChoice">
+<option value="General Website">General Website</option>
+<option value="Guess The Number">Guess The Number</option>
+<option value="Rock Paper Scissors">Rock Paper Scissors</option>
+<option value="Word Scramble">Word Scramble</option>
+<option value="New Game Suggestion">New Game Suggestion</option>
+</select>
+
+<label for="messageInput">Message:</label>
+<textarea id="messageInput" placeholder="Type your feedback, vote, or suggestion here..." required></textarea>
+
+<button type="submit">Send Message</button>
+<button type="reset">Clear Form</button>
+
+</form>
+
+<p id="contactMessage">
+Complete the form and press Send Message.
+</p>
+
+<div class="contact-info-card">
+
+<h3>What You Can Send</h3>
+
+<ul class="contact-list">
+<li>Feedback about the games</li>
+<li>Votes for new games to add</li>
+<li>Bug reports</li>
+<li>Suggestions to improve the website</li>
+<li>Difficulty feedback for each game</li>
+</ul>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<p>Retro Game Arcade - Web Technologies Class Project</p>
+</footer>
+
+<script src="sound.js"></script>
+<script src="contact.js"></script>
+
+</body>
+
+</html>

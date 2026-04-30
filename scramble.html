@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Word Scramble</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1 class="arcade-title">Word Scramble</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="credits.html">Credits</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<main>
+
+<section class="intro game-box">
+
+<h2>Word Scramble</h2>
+
+<p>Enter your initials, start a round, and unscramble the word before time runs out.</p>
+
+<label for="initialsInput">Initials:</label>
+<br>
+<input type="text" id="initialsInput" maxlength="3" placeholder="ABC">
+
+<br><br>
+
+<button id="startButton">Start Round</button>
+<button id="resetButton">Reset Score</button>
+
+<p>Time Left: <span id="timer">0</span></p>
+
+<h3>Scrambled Word</h3>
+<p id="scrambledWord" class="scrambled-word">----</p>
+
+<p>Hint: <span id="hintText">Press Start Round</span></p>
+
+<label for="answerInput">Your Answer:</label>
+<br>
+<input type="text" id="answerInput" placeholder="Type answer here">
+
+<p id="message">Enter your initials and press Start Round.</p>
+
+<p>Score: <span id="score">0</span></p>
+<p>Streak: <span id="streak">0</span></p>
+<p>Multiplier: <span id="multiplier">1x</span></p>
+
+<h3>Top Scores</h3>
+
+<ol id="leaderboard">
+<li>None</li>
+<li>None</li>
+<li>None</li>
+</ol>
+
+<button id="resetLeaderboardButton" class="danger-button">Reset Top Scores</button>
+
+</section>
+
+</main>
+
+<footer>
+<p>Retro Game Arcade - Web Technologies Class Project</p>
+</footer>
+
+<script src="sound.js"></script>
+<script src="scramble.js"></script>
+
+</body>
+</html>

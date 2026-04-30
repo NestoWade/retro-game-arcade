@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rock Paper Scissors</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1 class="arcade-title">Rock Paper Scissors</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="credits.html">Credits</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<main>
+
+<section class="intro game-box">
+
+<h2>Best Out Of 5</h2>
+
+<p>Enter your initials, press Start Round, then choose your hand before the timer runs out.</p>
+
+<label for="initialsInput">Initials:</label>
+<br>
+<input type="text" id="initialsInput" maxlength="3" placeholder="ABC">
+
+<br><br>
+
+<button id="startRoundButton">Start Round</button>
+<button id="resetButton">Reset Game</button>
+
+<p>Time Left: <span id="timer">5</span></p>
+
+<div class="rps-choice-area">
+
+<button class="rps-choice" data-choice="rock" disabled>
+<img src="images/rock.png" alt="Rock">
+</button>
+
+<button class="rps-choice" data-choice="paper" disabled>
+<img src="images/paper.png" alt="Paper">
+</button>
+
+<button class="rps-choice" data-choice="scissors" disabled>
+<img src="images/scissors.png" alt="Scissors">
+</button>
+
+</div>
+
+<p id="message">Enter your initials and press Start Round.</p>
+
+<div class="rps-result-area">
+
+<div class="rps-result-card">
+<h3>You Picked</h3>
+<img id="playerImage" src="" alt="Player Choice" class="result-image hidden">
+<p id="playerChoice">None</p>
+</div>
+
+<div class="rps-result-card">
+<h3>Computer Picked</h3>
+<img id="computerImage" src="" alt="Computer Choice" class="result-image hidden">
+<p id="computerChoice">None</p>
+</div>
+
+</div>
+
+<p>Round: <span id="roundNumber">1</span> / 5</p>
+<p>Your Rounds Won: <span id="playerRounds">0</span></p>
+<p>Computer Rounds Won: <span id="computerRounds">0</span></p>
+<p>Score: <span id="score">0</span></p>
+
+<h3>Top Scores</h3>
+
+<ol id="leaderboard">
+<li>None</li>
+<li>None</li>
+<li>None</li>
+</ol>
+
+<button id="resetLeaderboardButton" class="danger-button">Reset Top Scores</button>
+
+</section>
+
+</main>
+
+<footer>
+<p>Retro Game Arcade - Web Technologies Class Project</p>
+</footer>
+
+<script src="sound.js"></script>
+<script src="rps.js"></script>
+
+</body>
+</html>

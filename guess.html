@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Guess The Number</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1 class="arcade-title">Guess The Number</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="credits.html">Credits</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<main>
+
+<section class="intro game-box">
+
+<h2>Guess a number between 1 and 100</h2>
+
+<p>Enter your initials first, then press Enter after each guess.</p>
+
+<label for="initialsInput">Initials:</label>
+<br>
+<input type="text" id="initialsInput" maxlength="3" placeholder="ABC">
+
+<br><br>
+
+<label for="guessInput">Your Guess:</label>
+<br>
+<input type="number" id="guessInput" placeholder="Enter number">
+
+<br><br>
+
+<button id="continueButton">Continue Game</button>
+<button id="resetButton">Reset Score</button>
+
+<p id="message">Enter your initials and guess a number.</p>
+
+<p>Attempts Left: <span id="attemptsLeft">10</span></p>
+<p>Score: <span id="score">0</span></p>
+
+<h3>Top Scores</h3>
+
+<ol id="leaderboard">
+<li>None</li>
+<li>None</li>
+<li>None</li>
+</ol>
+
+<!-- SMALL RESET BUTTON AT BOTTOM -->
+<button id="resetLeaderboardButton" class="danger-button">Reset Top Scores</button>
+
+</section>
+
+</main>
+
+<footer>
+<p>Retro Game Arcade - Web Technologies Class Project</p>
+</footer>
+
+<script src="sound.js"></script>
+<script src="guess.js"></script>
+
+</body>
+</html>
